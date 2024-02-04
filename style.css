@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  width: 100% !important;
+}
+
+/************************** menulinje ******************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #e6dbd0;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  margin-right: 30px;
+}
+.menu li:last-child {
+  margin-right: 0px;
+}
+.menu a {
+  display: block;
+  padding: 10px;
+  color: black;
+  font-family: "Cutive Mono", monospace;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+menu a:hover {
+  color: green;
+}
+
+/************************** logo ******************************/
+#logo {
+  letter-spacing: 0.3rem;
+}
+
+#logo a {
+  color: black;
+  text-decoration: none;
+  font-family: "Cutive Mono", monospace;
+}
+
+/************************** brødkrummeti ******************************/
+.brodkrummesti {
+  font-family: "Cutive Mono", monospace;
+  color: black;
+  font-size: 1rem;
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+.brodkrummesti a {
+  text-decoration: none;
+  color: black;
+}
+
+/************************** produktliste ******************************/
+.grid_1_1_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+/************************** overskrifter ******************************/
+h1 {
+  margin-bottom: 50px;
+  font-family: "Cutive Mono", monospace;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Cutive Mono", monospace;
+  margin-left: 130px;
+  margin-bottom: 10px;
+}
+
+/************************** tekst ******************************/
+p {
+  font-family: "Cutive Mono", monospace;
+  margin-left: 130px;
+}
+
+/************************** kategorioversigt ******************************/
+.kategoriliste {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.kategoriliste a {
+  text-decoration: none;
+  padding: 2em;
+  color: black;
+  font-family: "Cutive Mono", monospace;
+  background-color: #ddecf0;
+  margin: 20px;
+}
+
+/************************** produkt side ******************************/
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#produktbillede {
+  margin-left: 100px;
+  width: 500px;
+}
+
+#produktbeskrivelse {
+  margin-right: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Cutive Mono", monospace;
+  cursor: pointer;
+  background-color: #ddecf0;
+  margin-top: 50px;
+  margin-left: 130px;
+}
