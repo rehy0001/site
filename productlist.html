@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produktliste</title>
+    <title>Productlist</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -28,25 +28,74 @@
         </nav>
     </header>
     <main>
-        <div class="brodkrummesti">
-            <a href="index.html">Home</a> / <a href="kategori.html">Category</a> /
-            <span>Productlist</span>
-        </div>
+        <!-- <div class="brodkrummesti">
+            <a href="index.html">Home</a> / <a href="category.html">Category</a> /
+            <span>Apparel</span>
+        </div> -->
 
-        <h1 id="overskrift">APPAREL</h1>
+        <h1 id="overskrift_productlist">APPAREL</h1>
+
         <template id="smallProductTemplate">
             <article class="smallProduct">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="produkt 8">
-                <h2>produkt 8</h2>
-                <p class="subtle">Tights </p>
-                <p class="price"><span>Prev.</span>DKK 500,-</p>
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+                    alt="Sahara Team India Fanwear Round Neck Jersey">
+                <h2>Sahara Team India Fanwear Round Neck Jersey</h2>
+                <p class="subtle">Tshirts / Nike</p>
+                <p class="price"><span>Prev.</span>DKK 1595,-</p>
                 <div class="discounted">
-                    <p>Now DKK 250,-</p>
-                    <p>-50%</p>
+                    <p>Now DKK 1560,-</p>
+                    <p>-34%</p>
+                </div>
+                <a id="readmore" href="product.html">Read More</a>
+            </article>
+        </template>
+        <!-- <article class="smallProduct onSale">
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="Blue t20">
+                <h2>Blue T20 Indian Cricket Jersey</h2>
+                <p class="subtle">Tshirts / NIke</p>
+                <p class="price"><span>Prev.</span>DKK 1595,-</p>
+                <div class="discounted">
+                    <p>Now DKK 1149,-</p>
+                    <p>-28%</p>
                 </div>
                 <a href="product.html">Read More</a>
             </article>
-        </template>
+            <article class="smallProduct soldOut">
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="Blue t20 Indian Cricket Jersey">
+                <h2>Blue T20 Indian Cricket Jersey</h2>
+                <p class="subtle">Tshirts / Nike</p>
+                <p class="price"><span>Prev.</span>DKK 1595,-</p>
+                <div class="discounted">
+                    <p>Now DKK 1149,-</p>
+                    <p>-28%</p>
+                </div>
+                <a href="product.html">Read More</a>
+            </article>
+            <article class="smallProduct soldOut onSale">
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="Blue t20 Indian Cricket Jersey">
+                <h2>Blue T20 Indian </h2>
+                <p class="subtle">Tshirts / Nike</p>
+                <p class="price"><span>Prev.</span>DKK 1595,-</p>
+                <div class="discounted">
+                    <p>Now DKK 1149,-</p>
+                    <p>-28%</p>
+                </div>
+                <a href="product.html">Read More</a>
+            </article>
+            <article class="smallProduct">
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp" alt=" India Fanwear Round Neck Jersey">
+                <h2>Sahara Team India Fanwear Round Neck Jersey</h2>
+                <p class="subtle">Tshirts / Nike</p>
+                <p class="price"><span>Prev.</span>DKK 1595,-</p>
+                <div class="discounted">
+                    <p>Now DKK 1560,-</p>
+                    <p>-34%</p>
+                </div>
+                <a href="product.html">Read More</a>
+            </article> -->
+
+
+
 
 
         <!-- <div class="grid_1_1_1_1">
@@ -118,10 +167,7 @@
 
         </div> -->
     </main>
-    <footer>
-
-    </footer>
-    <script src="productlist.js"></script>
+    <script src="js/productlist.js"></script>
 </body>
 
 </html>

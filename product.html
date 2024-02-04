@@ -4,36 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produkt</title>
+    <title>Product</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="product">
     <header>
         <div id="logo">
             <a href="index.html">WEBSHOP</a>
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="category.html">KATEGORIER</a></li>
-                <li><a href="productlist.html">PRODUKTLISTE</a></li>
-                <li><a href="product.html">PRODUKT</a></li>
+                <li><a href="category.html">CATEGORY</a></li>
+                <li><a href="productlist.html">PRODUCTLIST</a></li>
+                <li><a href="product.html">PRODUCT</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="brodkrummesti">
-            <a href="index.html">Hjem</a> / <a href="kategori.html">Kategorier</a> / <a
-                href="produktliste.html">Produktliste</a> /
-            <span>Produkt</span>
+            <a href="index.html">Home</a> / <a href="category.html">Category</a> / <a
+                href="productlist.html">Apparel</a> /
+            <span>Product</span>
         </div>
 
-        <div class="grid_1_1">
+
+        <img src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp"
+            alt="Sahara Team India Fanwear Round Neck Jersey" />
+        <section class="purchaseBox">
+            <h2>Name</h2>
+            <p>Brandname</p>
+            <form>
+                <label>Choose a size
+                    <select name="size">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                </label>
+                <button>Add to basket</button>
+            </form>
+        </section>
+        <section class="info">
+            <h2>Product Information</h2>
+            <dl>
+                <dt>Model name</dt>
+                <dd>Model details</dd>
+                <dt>Color</dt>
+                <dd>Blue</dd>
+                <dt>Inventory number</dt>
+                <dd>ID</dd>
+            </dl>
+            <h1>Brand</h1>
+            <p>Brand details</p>
+        </section>
+
+        <!-- <div class="grid_1_1">
             <div id="produktbillede">
                 <img src="1573.webp" alt="billede">
             </div>
@@ -52,10 +84,9 @@
                     Læg i kurven
                 </button>
             </div>
-        </div>
+        </div> -->
     </main>
-    <footer>
-    </footer>
+    <script src="js/product.js"></script>
 </body>
 
 </html>

@@ -55,54 +55,82 @@ menu a:hover {
   font-family: "Cutive Mono", monospace;
 }
 
+/************************** produktliste ******************************/
+.productlist main h1 {
+  grid-column: 1/-1;
+}
+
+.productlist main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+  gap: 60px;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+
+/* .grid_1_1_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 100px;
+} */
+
+/************************** overskrifter ******************************/
+h1 {
+  font-family: "Cutive Mono", monospace;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Cutive Mono", monospace;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/************************** tekst ******************************/
+p {
+  font-family: "Cutive Mono", monospace;
+  text-align: center;
+}
+
+dd {
+  font-family: "Cutive Mono", monospace;
+  text-align: center;
+}
+
+dt {
+  font-family: "Cutive Mono", monospace;
+  text-align: center;
+}
+
+#readmore {
+  font-family: "Cutive Mono", monospace;
+  color: blue;
+  margin-left: 100px;
+}
+
 /************************** brødkrummeti ******************************/
 .brodkrummesti {
   font-family: "Cutive Mono", monospace;
   color: black;
   font-size: 1rem;
-  margin-top: 25px;
-  margin-left: 50px;
-  margin-bottom: 40px;
+  margin-top: 2px;
 }
 .brodkrummesti a {
   text-decoration: none;
   color: black;
 }
 
-/************************** produktliste ******************************/
-.grid_1_1_1_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
-  margin-bottom: 100px;
-}
-
-/************************** overskrifter ******************************/
-h1 {
-  margin-bottom: 50px;
-  font-family: "Cutive Mono", monospace;
-  text-align: center;
-}
-
-h2 {
-  font-family: "Cutive Mono", monospace;
-  margin-left: 130px;
-  margin-bottom: 10px;
-}
-
-/************************** tekst ******************************/
-p {
-  font-family: "Cutive Mono", monospace;
-  margin-left: 130px;
-}
-
 /************************** kategorioversigt ******************************/
-.kategoriliste {
+.categorylist {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.kategoriliste a {
+.categorylist a {
   text-decoration: none;
   padding: 2em;
   color: black;
@@ -112,7 +140,25 @@ p {
 }
 
 /************************** produkt side ******************************/
-.grid_1_1 {
+.product main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.product main img {
+  grid-column: 2/-1;
+}
+
+.purchaseBox {
+  background-color: #ddecf0;
+  padding: 2rem;
+}
+
+section {
+  display: block;
+}
+
+/* .grid_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -136,4 +182,4 @@ button {
   background-color: #ddecf0;
   margin-top: 50px;
   margin-left: 130px;
-}
+} */
