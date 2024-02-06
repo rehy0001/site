@@ -1,4 +1,4 @@
-fetch("https://kea-alt-del.dk/t7/api/products")
+fetch("https://kea-alt-del.dk/t7/api/products?limit=50")
   .then((res) => res.json())
   .then(showProducts);
 
@@ -14,11 +14,18 @@ function showProduct(product) {
   //lave en kopi
   const copy = template.cloneNode(true);
   //ændre indhold
+  copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   copy.querySelector("h2").textContent = product.productdisplayname;
+  copy.querySelector("p.subtle").textContent = product.brandname;
+  copy.querySelector("p.price").textContent = "Prev. DKK " + product.price + ",-";
+  copy.querySelector("div.discounted").textContent = "-" + product.discount + "%";
   if (product.soldout) {
     //produktet er udsolgt
     copy.querySelector("article").classList.add("soldOut");
   }
+
+  copy.querySelector(".read-more").setAttribute("href", `product.html?id=${product.id}`);
+
   //appende
   document.querySelector("main").appendChild(copy);
 }

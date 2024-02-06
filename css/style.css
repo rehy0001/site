@@ -4,7 +4,9 @@
 }
 
 img {
-  width: 100% !important;
+  max-width: 100% !important;
+  height: auto;
+  display: block;
 }
 
 /************************** menulinje ******************************/
@@ -58,6 +60,8 @@ menu a:hover {
 /************************** produktliste ******************************/
 .productlist main h1 {
   grid-column: 1/-1;
+  font-family: "Cutive Mono", monospace;
+  text-align: center;
 }
 
 .productlist main {
@@ -69,47 +73,28 @@ menu a:hover {
   margin-bottom: 100px;
 }
 
-/* .grid_1_1_1_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
-  margin-bottom: 100px;
-} */
-
-/************************** overskrifter ******************************/
-h1 {
-  font-family: "Cutive Mono", monospace;
-  text-align: center;
-  margin-bottom: 20px;
+.smallProduct {
+  border: 1px solid lightgray;
 }
 
-h2 {
+.discounted {
   font-family: "Cutive Mono", monospace;
-  margin-bottom: 10px;
   text-align: center;
-  margin-bottom: 20px;
+}
+
+.read-more {
+  font-family: "Cutive Mono", monospace;
+  color: blue;
+}
+
+.soldOut {
+  border-color: blue;
 }
 
 /************************** tekst ******************************/
 p {
   font-family: "Cutive Mono", monospace;
-  text-align: center;
-}
-
-dd {
-  font-family: "Cutive Mono", monospace;
-  text-align: center;
-}
-
-dt {
-  font-family: "Cutive Mono", monospace;
-  text-align: center;
-}
-
-#readmore {
-  font-family: "Cutive Mono", monospace;
-  color: blue;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 /************************** brødkrummeti ******************************/
@@ -117,7 +102,8 @@ dt {
   font-family: "Cutive Mono", monospace;
   color: black;
   font-size: 1rem;
-  margin-top: 2px;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 .brodkrummesti a {
   text-decoration: none;
@@ -140,29 +126,36 @@ dt {
 }
 
 /************************** produkt side ******************************/
-.product main {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-
-.product main img {
-  grid-column: 2/-1;
-}
-
-.purchaseBox {
-  background-color: #ddecf0;
-  padding: 2rem;
-}
-
-section {
-  display: block;
-}
-
-/* .grid_1_1 {
+.grid_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+  margin-right: 100px;
+  margin-left: 200px;
+  margin-bottom: 100px;
 }
 
+.form {
+  font-family: "Cutive Mono", monospace;
+  margin-left: 50px;
+}
+
+#productname {
+  font-family: "Cutive Mono", monospace;
+  margin-left: 50px;
+}
+
+h2 {
+  font-family: "Cutive Mono", monospace;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-family: "Cutive Mono", monospace;
+  margin-left: 50px;
+}
+/* 
 #produktbillede {
   margin-left: 100px;
   width: 500px;
